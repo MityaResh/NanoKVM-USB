@@ -46,7 +46,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - name: Run build task
-        run: pnpm build
+        run: pnpm build --base=./
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
